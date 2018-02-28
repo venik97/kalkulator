@@ -1,0 +1,108 @@
+* {
+    box-sizing:border-box;
+    font-family:'Open Sans',Helvetica,Arial,sans-serif;
+    font-size:4vw;
+    font-weight: 300;
+    margin:0;
+    padding:0;
+}
+
+html {
+    height:100%;
+    background: radial-gradient(circle,white,white);
+    background-size:cover;
+}
+
+#calculator {
+    width: 8em;
+    height: auto;
+    background:radial-gradient(red,black);
+    margin: 10px auto;
+}
+
+.top, .middle {
+    height: 2em;
+}
+
+.top span, .middle span {
+    width: 2em;
+    float:left;
+    color:#FFF;
+    border-left: 1px solid rgba(255,255,255,0.3);
+}
+
+.top #output {
+    display: inline-block;
+    height:110px;
+    /*width:15em;*/
+    font-size: 1em;
+    margin: 0 0.5em;
+    overflow: hidden;
+    float:right;
+    color:#FFF;
+    /*line-height: 2em;*/
+    text-align:right;
+    letter-spacing:1px;
+    overflow-wrap: break-word;
+
+}
+
+/*.output {*/
+/*width: auto;*/
+/*height:220px;*/
+/*margin: auto;*/
+/*color:#FFF;*/
+/*border-left: 1px solid rgba(255,255,255,0.3);*/
+/*background:linear-gradient(#4389A2,#153394);*/
+/*display: inline;*/
+/*}*/
+
+.keys, .top, .middle {
+    overflow:hidden;
+}
+
+.keys span, .top span, .middle span {
+    float:left;
+    cursor:pointer;
+    width: 2em;
+    height:2em;
+    line-height: 2em;
+    color:#fff;
+    text-align:center;
+    user-select:none;
+    transition: background-color .2s ease;
+    border-right: 1px solid rgba(255,255,255,0.3);
+    border-top: 1px solid rgba(255,255,255,0.3);
+}
+
+.keys span.operator {
+    background:rgba(255,255,255,0.2);
+    border-right: 0;
+    color: white;
+}
+
+.top span.operator, .middle span.operator {
+    background:rgba(255,255,255,0.2);
+    border-right: 0;
+    color: rgba(0,0,0,0.5);
+}
+
+.keys span.calc {
+    color:yellow;
+}
+
+.keys span:hover {
+    background:rgba(255,255,255,0.3);
+    color:#FFF;
+}
+
+.keys span.calc:hover {
+    background:rgba(255,255,255,0.2);
+    color:#fff;
+}
+
+.top span:hover, .middle span:hover {
+    background:rgba(255,255,255,0.2);
+    color:#FFF;
+}
+
